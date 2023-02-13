@@ -1,0 +1,107 @@
+# direnv
+.envrc.local
+.envrc.chamber
+
+# dependencies
+/vendor
+/node_modules
+/.vendor-new
+
+# testing
+/coverage
+coverage.out
+__snapshots__
+cypress/cypress
+
+# production
+/build
+
+# development
+/mnt
+/tmp
+/log
+
+# Ignore all compiled binary directories found anywhere in the project
+bin/
+
+# Ignore
+/docs/packages.txt
+
+#debugging
+/cmd/milmove/debug
+/cmd/webserver/debug
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+.idea
+.vscode
+*.swp
+*.sublime-*
+.eslintcache
+
+# In case somebody accidentally runs npm install instead of using yarn
+package-lock.json
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+schema.sql
+
+*.stamp
+
+public/swagger-ui/*
+!public/swagger-ui/api.html
+!public/swagger-ui/internal.html
+!public/swagger-ui/admin.html
+!public/swagger-ui/ghc.html
+
+# Cypress integration tests
+cypress/videos
+cypress/screenshots
+cypress/results
+cypress/reports
+
+# Playwright integration tests
+playwright/.cache
+playwright/html-report
+playwright/results
+playwright-report
+
+# XLSX backup files
+~$*.xlsx
+
+# SQLEditor
+*.sqs
+
+# Ignore static storybook content
+storybook-static
+
+# Anti-Virus
+*.fp
+*.sfp
+*.ign
+*.ign2
+
+# Certs
+*.srl
+
+# nix
+.nix-hash
+.nix-disable
+.npmglobal
+.gopath
+
+# fresh-brew
+# The first two files are meant to be updated in the trussworks/fresh-brew repo
+# The lock files can be helpful to troubleshoot homebrew issues. They will
+# represent the last known good state.
+Brewfile
+pour.sh
+Brewfile.local.lock.json
+Brewfile.lock.json
+/junit.xml
